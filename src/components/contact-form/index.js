@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 
 import Axios from "@/utils/Axios";
+import Image from "next/image";
 import { toast } from "react-toastify";
+
 const ADMIN_EMAIL = "bentilshadrack72@gmail.com"
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -66,44 +68,21 @@ const ContactForm = () => {
       // console.log(message);
       console.log(error);
     }
-
-    // Uncomment snippet below to use Fetch API
-    // try {
-    //   const response = await fetch("https://everythingmail.onrender.com/api/send", {
-    //     method: "POST",
-    //     headers: { "Content-Type": "application/json" },
-    //     body: JSON.stringify(mailData),
-    //   });
-    //   const data = await response.json();
-    //   if (data?.success) {
-    //     toast.success("Email sent successfully");
-    //   } else {
-    //     toast.error("Sorry something went wrong");
-    //   }
-    //   setLoading(false);
-    // } catch (error) {
-    //   setLoading(false);
-    //   let message = "Sorry something went wrong";
-    //   if (error.code == "ERR_NETWORK") {
-    //     message = "Network Error";
-    //   }
-    //   toast.error(message);
-    //   console.log(error);
-    // }
   };
   return (
     <section className="h-auto md:h-screen w-screen flex lg:flex-row flex-col-reverse items-center gap-6 bg-gray-100">
       <div className="w-full md:w-1/2 md:backdrop:h-screen">
-        <img
+        <Image
           src="/images/mail.jpg"
           alt="Everything Mail"
           className="w-full h-full"
+          
         />
       </div>
       <form className="w-full md:w-1/2 md:h-screen px-10 py-5">
         <h2 className="text-2xl font-bold pb-3">Contact Us</h2>
         <h4 className="text-xl font-bold pb-3">
-          Wanna Talk? Schedule the meeting, we'll buy the coffee!
+          {`Wanna Talk? Schedule the meeting, we'll buy the coffee!`}
         </h4>
         <article className="flex flex-col gap-6 w-full">
           <div>
