@@ -176,6 +176,23 @@ All you need as a requirement is the API URL and a clear understanding of the va
 These wonderful people have contributed to this project:
 
 <!-- readme: contributors -start -->
+<table>
+<tr>
+    <td align="center">
+        <a href="https://github.com/baabashinelle">
+            <img src="https://avatars.githubusercontent.com/u/83133493?v=4" width="100;" alt="baabashinelle"/>
+            <br />
+            <sub><b>Baaba Dampare</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/qbentil">
+            <img src="https://avatars.githubusercontent.com/u/55560024?v=4" width="100;" alt="qbentil"/>
+            <br />
+            <sub><b>Bentil Shadrack</b></sub>
+        </a>
+    </td></tr>
+</table>
 <!-- readme: contributors -end -->
 
 This project follows the [all-contributors]() specification. Contributions of any kind are welcome!
