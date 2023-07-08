@@ -4,7 +4,7 @@ import Axios from "@/utils/Axios";
 import Image from "next/image";
 import { toast } from "react-toastify";
 
-const ADMIN_EMAIL = "bentilshadrack72@gmail.com"
+const ADMIN_EMAIL = "baabadampare@gmail.com"
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -48,6 +48,7 @@ const ContactForm = () => {
     try {
       const { data } = await Axios({
         method: "POST",
+        url: "/api/send",
         data: mailData,
         headers: { "Content-Type": "application/json" },
       });
