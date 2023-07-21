@@ -10,7 +10,7 @@ const Technologies = () => {
           alt="Line"
           width={200}
           height={200}
-          className='mx-auto mt-[-40px]'
+          className='mx-auto mt-[-35px]'
         />
       <article className="flex lg:flex-row flex-col items-center justify-evenly w-full">
         <Image

@@ -77,7 +77,8 @@ const ContactForm = () => {
           src="/images/mail.jpg"
           alt="Everything Mail"
           className="w-full h-full"
-          
+          width={500}
+          height={500}
         />
       </div>
       <form className="w-full md:w-1/2 md:h-screen px-10 py-5">
