@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-
 import Axios from "@/utils/Axios";
-import Image from "next/image";
 import { toast } from "react-toastify";
 
 const ADMIN_EMAIL = "baabadampare@gmail.com";
