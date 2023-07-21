@@ -4,7 +4,7 @@ import Axios from "@/utils/Axios";
 import Image from "next/image";
 import { toast } from "react-toastify";
 
-const ADMIN_EMAIL = "baabadampare@gmail.com"
+const ADMIN_EMAIL = "baabadampare@gmail.com";
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -22,7 +22,7 @@ const ContactForm = () => {
       [name]: type === "checkbox" ? checked : value,
     }));
 
-    console.log(formData)
+    console.log(formData);
   };
 
   const handleSubmit = async (e) => {
@@ -38,7 +38,9 @@ const ContactForm = () => {
     Sent from EverythingMail Demo Website <br />
     `;
     const mailData = {
-      receiver_email: formData.copy ? [ADMIN_EMAIL, formData.email] : ADMIN_EMAIL,
+      receiver_email: formData.copy
+        ? [ADMIN_EMAIL, formData.email]
+        : ADMIN_EMAIL,
       sender_email: formData.email,
       sender_identity: formData.name,
       subject: "EverythingMail Demo Test",
@@ -71,21 +73,26 @@ const ContactForm = () => {
     }
   };
   return (
-    <section className="h-auto md:h-screen w-screen flex lg:flex-row flex-col-reverse items-center gap-6 bg-gray-100">
+    <section className="h-auto md:h-screen w-screen flex lg:flex-row flex-col-reverse lg:px-14 lg:py-20 px-8 py-3 gap-6 justify-center bg-[#F2F7FF]">
       <div className="w-full md:w-1/2 md:backdrop:h-screen">
-        <Image
-          src="/images/mail.jpg"
-          alt="Everything Mail"
-          className="w-full h-full"
-          width={500}
-          height={500}
-        />
+        <div>
+          <h1 className="text-5xl font-extrabold text-black mb-7">Let's Talk</h1>
+          <p className="lg:max-w-xl mb-7">
+            {" "}
+            This is a sample contact form page to demo the Everything Mail
+            Sending Api. It has been integrated into this form to enable email
+            functionalities. You can use it on your website as well!
+          </p>
+          <h3 className="text-3xl font-extrabold text-black">Email</h3>
+          <p className="mt-3 mb-6">samplemail@gmail.com</p>
+          <h3 className="text-3xl font-extrabold text-black mb-5">Socials</h3>
+          <p className="mb-3">Instagram</p>
+          <p className="mb-3">Facebook</p>
+          <p className="mb-3">Twitter</p>
+          <p className="mb-3">Tiktok</p>
+        </div>
       </div>
-      <form className="w-full md:w-1/2 md:h-screen px-10 py-5">
-        <h2 className="text-2xl font-bold pb-3">Contact Us</h2>
-        <h4 className="text-xl font-bold pb-3">
-          {`Wanna Talk? Schedule the meeting, we'll buy the coffee!`}
-        </h4>
+      <form className="md:w-[40%] md:h-screen px-10">
         <article className="flex flex-col gap-6 w-full">
           <div>
             <label className="block pb-1">Name</label>
@@ -140,11 +147,13 @@ const ContactForm = () => {
               onChange={handleInputChange}
               className="w-4 h-4 focus:outline-[#009ce0] rounded"
             />
-            <label htmlFor="copy" className="pl-2">Send me a copy</label>
+            <label htmlFor="copy" className="pl-2">
+              Send me a copy
+            </label>
           </div>
 
           <button
-            className="bg-[#009ce0] text-white py-2 px-10 rounded disabled:opacity-50"
+            className="bg-[#009ce0] text-white py-2 px-10 disabled:opacity-50"
             onClick={handleSubmit}
             disabled={loading}
           >
