@@ -1,17 +1,12 @@
-import React from 'react'
+import React from "react";
 import Image from "next/image";
 
 const Objectives = () => {
   return (
-    <section className="flex lg:flex-row flex-col items-center gap-6 bg-gray-100">
-      <Image
-        src="/images/e1.jpg"
-        alt="Everything Mail"
-        width={600}
-        height={600}
-      />
-      <div className="lg:pr-14 pl-8">
-        <h2 className="text-xl font-bold pb-3">About</h2>
+    <section className="flex lg:flex-row flex-col items-center gap-6 bg-[#F2F7FF] font-inter lg:px-28 px-8 py-14">
+      <div>
+        <h2 className="text-xl font-bold pb-1 text-[#009CE0]">About</h2>
+        <h1 className="text-5xl font-extrabold text-black pb-4">Everything Mail</h1>
         <p className="text-lg">
           Email communication is an essential feature of many web and mobile
           applications, and developers often face challenges integrating email
@@ -23,8 +18,14 @@ const Objectives = () => {
           integrate email functionality into their applications quickly.
         </p>
       </div>
+      <Image
+        src="/images/abt.png"
+        alt="Everything Mail"
+        width={500}
+        height={500}
+      />
     </section>
   );
-}
+};
 
-export default Objectives
+export default Objectives;

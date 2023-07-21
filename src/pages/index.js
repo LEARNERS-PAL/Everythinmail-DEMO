@@ -10,9 +10,9 @@ export default function Home() {
     <main className="">
       <Hero />
       <Technologies/>
+      <Objectives/>
       <Features/>
-      {/* <Objectives/>
-      <Footer/> */}
+      <Footer/>
     </main>
   );
 }
