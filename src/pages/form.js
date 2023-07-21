@@ -3,7 +3,7 @@ import Navbar from "@/components/navbar";
 
 export default function Form() {
   return (
-    <main className="2xl:h-screen overflow-hidden font-serif">
+    <main className="2xl:h-screen overflow-hidden font-inter">
       <Navbar />
       <ContactForm />
     </main>
