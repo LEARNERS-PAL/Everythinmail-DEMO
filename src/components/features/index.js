@@ -8,7 +8,7 @@ const Features = () => {
   return (
     <div className="bg-[#F2F7FF] font-inter lg:px-28 px-8 py-14">
       <h1 className="text-5xl font-extrabold text-black">
-        Why EverythingMail?
+        Why Everything Mail?
       </h1>
       <main className="grid lg:grid-cols-2 gap-16 lg:gap-0 justify-between py-16">
         <section className="grid grid-rows-2 gap-16">
