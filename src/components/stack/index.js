@@ -3,8 +3,15 @@ import Image from "next/image";
 
 const Technologies = () => {
   return (
-    <section className=" flex flex-col gap-10 lg:px-14 px-8 py-14">
-      <h1 className="text-center text-xl font-bold">Technologies</h1>
+    <section className=" flex flex-col gap-10 lg:px-14 px-8 py-14 font-inter bg-[#F2F7FF]">
+      <h1 className="text-center text-xl font-bold">Developed with <span className='text-[#009CE0]'>common and popular</span> technologies</h1>
+      <Image
+          src="/images/line.png"
+          alt="Line"
+          width={200}
+          height={200}
+          className='mx-auto mt-[-40px]'
+        />
       <article className="flex lg:flex-row flex-col items-center justify-evenly w-full">
         <Image
           src="https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg"

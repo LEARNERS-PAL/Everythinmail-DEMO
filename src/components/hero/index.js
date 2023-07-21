@@ -18,12 +18,12 @@ const Hero = () => {
               href="https://github.com/LEARNERS-PAL/everythingmail/#checkered_flag-starting"
               target="_blank"
             >
-              <button className="bg-black text-white py-3 px-10 rounded-sm border-[2px] border-black">
+              <button className="bg-black text-white py-3 px-14 rounded-sm border-[2px] border-black">
                 Get Started
               </button>
             </a>
             <Link href="/form">
-              <button className="bg-white text-black py-3 px-10 rounded-sm border-[2px] border-black">
+              <button className="bg-white text-black py-3 px-14 rounded-sm border-[2px] border-black">
                 View Demo
               </button>
             </Link>
