@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 .hero-email {
-  background-image: url("../../public/images/email-bg.png");
+  background-image: url("/images/email-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
