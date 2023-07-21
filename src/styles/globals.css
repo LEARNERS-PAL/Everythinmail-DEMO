@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.hero-email{
-   background-image:
-    linear-gradient(to bottom, rgba(16, 16, 16, 0.52), rgba(16, 16, 16, 0.52)),
-    url('../../public/images/e2.jpg');
+.hero-email {
+  background-image: url("../../public/images/email-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

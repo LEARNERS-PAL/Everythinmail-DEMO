@@ -3,10 +3,10 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center lg:px-14 px-8 py-5 border-b-[1px] border-gray-400 text-white">
-      <h1>EVERYTHINGMAIL</h1>
+    <nav className="flex justify-between items-center lg:px-14 px-8 py-3 text-black font-inter">
+      <h1 className='font-semibold'>EVERYTHINGMAIL</h1>
       <Link href="/form">
-        <button className="bg-[#009ce0] text-white py-2 px-5 rounded-xl">
+        <button className="bg-[#009ce0] text-white py-3 px-6 rounded-sm">
           View Demo
         </button>
       </Link>

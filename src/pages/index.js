@@ -9,10 +9,10 @@ export default function Home() {
   return (
     <main className="">
       <Hero />
-      <Features/>
+      {/* <Features/>
       <Objectives/>
       <Technologies/>
-      <Footer/>
+      <Footer/> */}
     </main>
   );
 }
