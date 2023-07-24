@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Axios from "@/utils/Axios";
 import { toast } from "react-toastify";
 
-const ADMIN_EMAIL = "baabadampare@gmail.com";
+const ADMIN_EMAIL = "mail.everytin@gmail.com";
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -19,8 +19,6 @@ const ContactForm = () => {
       ...prev,
       [name]: type === "checkbox" ? checked : value,
     }));
-
-    console.log(formData);
   };
 
   const handleSubmit = async (e) => {
