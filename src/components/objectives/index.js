@@ -6,7 +6,7 @@ const Objectives = () => {
     <section className="flex lg:flex-row flex-col items-center gap-6 bg-[#F2F7FF] font-inter lg:px-28 px-8 py-14">
       <div>
         <h2 className="text-xl font-bold pb-1 text-[#009CE0]">About</h2>
-        <h1 className="text-5xl font-extrabold text-black pb-4">Everything Mail</h1>
+        <h1 className="lg:text-5xl text-3xl font-extrabold text-black pb-4">Everything Mail</h1>
         <p className="text-lg">
           Email communication is an essential feature of many web and mobile
           applications, and developers often face challenges integrating email

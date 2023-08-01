@@ -7,7 +7,7 @@ import { VscServerProcess } from "react-icons/vsc";
 const Features = () => {
   return (
     <div className="bg-[#F2F7FF] font-inter lg:px-28 px-8 py-14">
-      <h1 className="text-5xl font-extrabold text-black">
+      <h1 className="lg:text-5xl text-3xl font-extrabold text-black">
         Why Everything Mail?
       </h1>
       <main className="grid lg:grid-cols-2 gap-16 lg:gap-0 justify-between py-16">
